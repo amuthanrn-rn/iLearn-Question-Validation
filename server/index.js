@@ -8,7 +8,7 @@ import questionsRouter from './src/routes/questions.js';
 import aiRouter from './src/routes/ai.js';
 import configRouter from './src/routes/config.js';
 import databaseRouter from './src/routes/database.js';
-import importRouter from './src/routes/import.js';
+import questionsProxyRouter from './src/routes/questionsProxy.js';
 
 dotenv.config();
 
@@ -50,7 +50,7 @@ app.use('/api/questions', questionsRouter);
 app.use('/api/ai', aiRouter);
 app.use('/api/config', configRouter);
 app.use('/api/database', databaseRouter);
-app.use('/api/import', importRouter);
+app.use('/api/questions', questionsProxyRouter);
 
 app.listen(PORT, () => {
   console.log('Server running on port ' + PORT);

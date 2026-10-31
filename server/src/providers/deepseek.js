@@ -11,7 +11,7 @@ class DeepSeekProvider {
         baseURL: config.deepseek.baseUrl,
         timeout: config.ai.timeoutMs,
         headers: {
-          'Authorization': Bearer ,
+          'Authorization': `Bearer ${config.deepseek.apiKey}`,
           'Content-Type': 'application/json'
         }
       });

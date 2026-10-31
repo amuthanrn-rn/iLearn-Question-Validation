@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "nodemon index.js",
     "start": "node index.js",
-    "test": "jest --runInBand"
+    "worker": "node worker.js",
+    "dry-run": "node dry-run.js",
+    "test": "node --test tests/**/*.mjs"
   },
   "dependencies": {
     "axios": "^1.21.0",
